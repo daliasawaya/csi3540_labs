@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Cambria', sans-serif;
+    background-color: #f4f4f4; /* Background color for the entire page */
+}
+
+.info {
+    text-align: center;
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.title {
+    font-weight: bold;
+    font-size: 40px;
+    color: #333; /* Dark gray text color */
+}
+
+.titleInfo {
+    color: #666; /* Medium gray text color */
+}
+
+.section {
+    width: 80%; /* Adjust the width as needed */
+    margin-top: 20px; /* Spacing between sections */
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.subtitleBox {
+    text-align: center;
+    border-bottom: 2px solid #ccc; /* Light gray border bottom */
+    padding: 10px;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 24px;
+    color: #333; /* Dark gray text color */
+}
+
+.content {
+    padding: 20px;
+}
+
+.contentItem ul {
+    margin-top: 10px; /* Spacing between bullet points */
+    padding-left: 20px; /* Indentation for bullet points */
+}
+
+.contentItem li {
+    margin-bottom: 8px; /* Spacing between bullet points */
+}
+
+.column {
+    float: left;
+    width: 33%; /* Adjust the width as needed */
+}
+
+
+.skillList {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.skillList li {
+    margin-bottom: 8px; /* Spacing between bullet points */
+    color: #666; /* Medium gray text color */
+    font-size: 16px;
+}
+
+.contentItem {
+    font-size: 16px;
+    color: #666; /* Medium gray text color */
+}
+
+.workExperiences {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Distribute items evenly between the two columns */
+}
+
+.workTitle {
+    font-weight: bold; /* Make work titles bold */
+    font-size: 18px; /* Adjust title font size */
+}
+
+.workInfo {
+    margin-bottom: 10px; /* Add spacing between work title and info */
+    color: #666; /* Set color for work info */
+}
+
+.description {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.description li {
+    margin-bottom: 8px; /* Spacing between bullet points */
+    color: #666; /* Medium gray text color */
+}
+
+.workExperience {
+    width: 48%; /* Set width for each column */
+    margin-bottom: 20px; /* Add separation between work experiences */
+    margin-right: 2%; /* Add margin between columns */
+}
