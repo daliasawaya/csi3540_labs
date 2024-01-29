@@ -1,5 +1,6 @@
 let pacmanPos;
 let score = 0; 
+let numDots;
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -10,9 +11,12 @@ function createGame(n){
     let tableau = Array(n);
     console.log(tableau.length);
 
+    this.numDots = n-3;
+    console.log("numDots =" + this.numDots);
+
     //choose pacman position
     this.pacmanPos = getRandomInt(10);
-    console.log("pacmanPos= "+this.pacmanPos)
+    console.log("pacmanPos= "+this.pacmanPos);
 
     //choose ghost position
     let ghostPos = this.pacmanPos;
@@ -96,10 +100,26 @@ function moveRight(game){
 
 function eatDot(){
     console.log("eatDot");
-    this.score = this.score + 1;
-    console.log("score = "+this.score);
+    score++;
+    console.log("score = "+score);
+
+    this.numDots--;
+    console.log("numDots = "+this.numDots);
+
+    if(this.numDots == 0){
+        console.log("YOU WIN!! Creating new game");
+        createGame(10);
+    }
 }
 
 game = createGame(10);
 moveLeft(game);
-moveRight(game);
+moveLeft(game);
+moveLeft(game);
+moveLeft(game);
+moveLeft(game);
+moveLeft(game);
+moveLeft(game);
+moveLeft(game);
+moveLeft(game);
+moveLeft(game);
